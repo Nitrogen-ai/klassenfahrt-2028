@@ -1,0 +1,95 @@
+<!doctype html><html lang="de"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Klassenfahrt Hamburg</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet"><style>
+:root{--ink:#22302d;--soft:#55665f;--line:rgba(34,48,45,.14);--bg:#f4f6f3;--card:#fff;--teal:#0f6d66}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Nunito',sans-serif;background:var(--bg);color:var(--ink);line-height:1.5}
+a{color:inherit}
+.wrap{max-width:1080px;margin:0 auto;padding:0 16px}
+header.hero{background:var(--c);color:#fff;padding:28px 0 64px;position:relative;overflow:hidden}
+header.hero::after{content:attr(data-emoji);position:absolute;right:-10px;bottom:-40px;font-size:220px;opacity:.13;line-height:1}
+.crumb{font-size:.9rem;opacity:.9;text-decoration:none;display:inline-block;margin-bottom:18px}
+.crumb:hover{text-decoration:underline}
+.badge{display:inline-grid;place-items:center;width:46px;height:46px;border-radius:12px;background:#fff;color:var(--c);
+ font:700 1.6rem 'Fredoka',sans-serif;margin-right:12px;vertical-align:middle}
+h1{font:700 clamp(2rem,6vw,3.2rem)/1.1 'Fredoka',sans-serif;display:inline;vertical-align:middle}
+.land{font:600 1rem 'Fredoka',sans-serif;opacity:.85;margin-top:10px}
+.motto{font-size:1.25rem;font-weight:700;margin-top:4px}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px;margin-top:-40px;position:relative}
+.stat{background:var(--card);border-radius:16px;padding:14px 16px;box-shadow:0 4px 0 var(--line);border:1px solid var(--line)}
+.stat .k{font-size:.78rem;text-transform:uppercase;letter-spacing:.06em;color:var(--soft);font-weight:800}
+.stat .v{font:700 1.6rem 'Fredoka',sans-serif;color:var(--c);line-height:1.2;margin-top:2px}
+.stat .s{font-size:.85rem;color:var(--soft)}
+h2{font:600 1.5rem 'Fredoka',sans-serif;margin:36px 0 14px}
+.adv{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px}
+.card{background:var(--card);border-radius:16px;padding:16px 18px;border:1px solid var(--line);border-top:5px solid var(--c)}
+.card .ic{font-size:1.9rem;line-height:1}
+.card h3{font:600 1.1rem 'Fredoka',sans-serif;margin:8px 0 4px}
+.card p{font-size:.95rem;color:var(--soft)}
+.cmp{background:var(--card);border-radius:16px;padding:18px;border:1px solid var(--line);display:grid;gap:22px;grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
+.cmp h3{font:600 1rem 'Fredoka',sans-serif;margin-bottom:10px}
+.bar{display:grid;grid-template-columns:76px 1fr 64px;align-items:center;gap:8px;margin:6px 0;font-size:.9rem}
+.bar .t{height:16px;background:#eceeea;border-radius:8px;overflow:hidden}
+.bar .t i{display:block;height:100%;border-radius:8px;background:#b9c2bd}
+.bar.me{font-weight:800}.bar.me .t i{background:var(--c)}
+.bar .n{text-align:right;font-variant-numeric:tabular-nums}
+.note{font-size:.82rem;color:var(--soft);margin-top:8px}
+.days{list-style:none;counter-reset:d;display:grid;gap:8px}
+.days li{counter-increment:d;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:10px 14px 10px 64px;position:relative}
+.days li::before{content:"Tag " counter(d);position:absolute;left:12px;top:10px;font:700 .85rem 'Fredoka',sans-serif;color:var(--c)}
+.two{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:14px}
+.box{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:16px 18px}
+.box ul{padding-left:1.1em}.box li{margin:3px 0}
+.box.warn{background:#fff8e6;border-color:#f1d48a}
+.price{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
+.chip{background:var(--h);color:var(--ink);border-radius:999px;padding:4px 12px;font-weight:700;font-size:.9rem}
+.btn{display:inline-block;background:var(--c);color:#fff;text-decoration:none;font:600 1rem 'Fredoka',sans-serif;padding:10px 18px;border-radius:12px;margin:6px 8px 0 0}
+.btn.ghost{background:transparent;color:var(--c);border:2px solid var(--c)}
+footer{margin:48px 0 24px;font-size:.82rem;color:var(--soft)}
+/* Übersicht */
+.grid4{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px;margin-top:-40px;position:relative}
+.dest{display:block;text-decoration:none;background:var(--card);border-radius:18px;overflow:hidden;border:1px solid var(--line);box-shadow:0 4px 0 var(--line);transition:transform .15s}
+.dest:hover{transform:translateY(-3px)}
+.dest .top{background:var(--c);color:#fff;padding:16px 18px;position:relative}
+.dest .top b{font:700 1.7rem 'Fredoka',sans-serif}
+.dest .top .L{position:absolute;right:14px;top:12px;background:#fff;color:var(--c);width:36px;height:36px;border-radius:10px;display:grid;place-items:center;font:700 1.2rem 'Fredoka',sans-serif}
+.dest .top .e{font-size:2.2rem;line-height:1}
+.dest .bd{padding:14px 18px}
+.dest .bd .m{font-weight:700}
+.dest .bd ul{margin:8px 0 0 1.1em;font-size:.92rem;color:var(--soft)}
+.dest .bd .p{margin-top:10px;font:700 1.1rem 'Fredoka',sans-serif;color:var(--c)}
+table.t{width:100%;border-collapse:collapse;background:var(--card);border-radius:16px;overflow:hidden;font-size:.95rem}
+table.t th,table.t td{padding:10px 12px;border-bottom:1px solid var(--line);text-align:left}
+table.t th{background:#e9eeeb;font-family:'Fredoka',sans-serif;font-weight:600}
+.scroll{overflow-x:auto}
+</style></head>
+<body style="--c:#1f5fa8;--h:#e4eefa">
+<header class="hero" data-emoji="⚓"><div class="wrap">
+<a class="crumb" href="./">← Alle vier Ziele · Klassenfahrt Mo 19.06. – Fr 23.06.2028</a><br>
+<span class="badge">A</span><h1>Hamburg</h1>
+<div class="land">Deutschland</div><div class="motto">Hafen, Elbe &amp; Großstadt – ganz nah</div>
+</div></header>
+<main class="wrap">
+<section class="stats">
+ <div class="stat"><div class="k">Preis ab</div><div class="v">124 €</div><div class="s">pro Person, 4 Nächte</div></div>
+ <div class="stat"><div class="k">Anreise</div><div class="v">ca. 2 h</div><div class="s">ca. 2 h (Bahn) · ca. 3 h (Bus)</div></div>
+ <div class="stat"><div class="k">Dauer</div><div class="v">5 Tage</div><div class="s">passt genau: Mo 19.06. – Fr 23.06.2028</div></div>
+ <div class="stat"><div class="k">Bewertung</div><div class="v">4,7 ★</div><div class="s">311 Bewertungen bei CTS</div></div>
+</section>
+<h2>Was spricht für Hamburg?</h2>
+<div class="adv"><div class="card"><div class="ic">🚆</div><h3>Kürzeste Anreise</h3><p>Mit der Bahn in rund zwei Stunden da – mehr Zeit vor Ort, weniger im Bus.</p></div><div class="card"><div class="ic">💶</div><h3>Günstigster Grundpreis</h3><p>Ab 124 € p. P. (Bahn) – das niedrigste Angebot der vier Ziele.</p></div><div class="card"><div class="ic">🚢</div><h3>Hafen &amp; Wasser</h3><p>Hafenrundfahrt durch die Containerterminals oder SUP auf der Alster.</p></div><div class="card"><div class="ic">🚂</div><h3>Miniatur Wunderland</h3><p>Eine der größten Modelleisenbahnen der Welt – plus Escape Game auf einem Museumsschiff.</p></div><div class="card"><div class="ic">🧳</div><h3>Geschichte zum Anfassen</h3><p>BallinStadt (Auswanderung), Dialog im Dunkeln, Speicherstadt (UNESCO).</p></div><div class="card"><div class="ic">🎭</div><h3>Musical-Abend</h3><p>Abschlussabend mit Musical oder Theater möglich.</p></div></div>
+<h2>Im Vergleich</h2>
+<div class="cmp"><div><h3>Grundpreis ab (günstigste Anreise)</h3><div class="bar me"><span>Hamburg</span><span class="t"><i style="width:44%"></i></span><span class="n">124 €</span></div><div class="bar"><span>Prag</span><span class="t"><i style="width:63%"></i></span><span class="n">176 €</span></div><div class="bar"><span>Polen</span><span class="t"><i style="width:70%"></i></span><span class="n">198 €</span></div><div class="bar"><span>Danzig</span><span class="t"><i style="width:100%"></i></span><span class="n">281 €</span></div></div><div><h3>Fahrzeit ab Berlin</h3><div class="bar me"><span>Hamburg</span><span class="t"><i style="width:24%"></i></span><span class="n">ca. 2 h</span></div><div class="bar"><span>Prag</span><span class="t"><i style="width:53%"></i></span><span class="n">ca. 4,5 h</span></div><div class="bar"><span>Polen</span><span class="t"><i style="width:100%"></i></span><span class="n">ca. 8,5 h</span></div><div class="bar"><span>Danzig</span><span class="t"><i style="width:76%"></i></span><span class="n">ca. 6,5 h</span></div><p class=note>Polen = Krakau; Richtwerte, je nach Verbindung.</p></div><div><h3>Entfernung (Luftlinie ab Berlin)</h3><div class="bar me"><span>Hamburg</span><span class="t"><i style="width:49%"></i></span><span class="n">290 km</span></div><div class="bar"><span>Prag</span><span class="t"><i style="width:59%"></i></span><span class="n">350 km</span></div><div class="bar"><span>Polen</span><span class="t"><i style="width:100%"></i></span><span class="n">590 km</span></div><div class="bar"><span>Danzig</span><span class="t"><i style="width:80%"></i></span><span class="n">470 km</span></div></div></div>
+<h2>So könnte die Woche aussehen</h2>
+<ol class="days"><li>Anreise, Abendspaziergang durch die Speicherstadt</li><li>Stadtführung, Hafenrundfahrt oder SUP auf der Alster</li><li>Maritimes Museum / Dialog im Dunkeln, BallinStadt, Reeperbahn-Führung</li><li>Museum, Dungeon oder Chocoversum, Abschlussabend Musical</li><li>Heimreise nach dem Frühstück</li></ol>
+<h2>Preise &amp; Leistungen</h2>
+<div class="two">
+ <div class="box"><b>Preise ab (pro Person)</b><div class="price"><span class="chip">Bahn ab 124 €</span><span class="chip">Reisebus ab 219 €</span><span class="chip">Flug ab 274 €</span></div>
+  
+  <p class="note">Abhängig von Gruppengröße, Reisezeitraum, Unterkunft und Abfahrtsort. Eintritte und Programmbausteine kommen dazu.</p>
+  <p style="margin-top:10px"><b>Unterkunft:</b> a&amp;o Hamburg Hauptbahnhof (Hostel, 4–8-Bett-Zimmer); weitere Häuser z. B. MEININGER Altona, Generator St. Georg, Jugendherberge Horner Rennbahn</p></div>
+ <div class="box"><b>Inklusive</b><ul><li>4 Nächte mit Frühstück</li><li>ca. 2 h Stadtführung zu Fuß (Bus: 3 h Stadtrundfahrt)</li><li>digitale Stadtrallye</li><li>Einzelzimmer für Begleitpersonen ohne Aufpreis</li><li>Bus: 150 Freikilometer vor Ort (z. B. Heide Park)</li></ul></div>
+ <div class="box warn"><b>Gut zu wissen</b><ul><li>Musical und Eintritte kosten extra</li><li>In a&amp;o-Häusern Handtücher mitbringen</li><li>Mehrere Unterkünfte nur bargeldlos</li></ul></div>
+</div>
+<p style="margin-top:18px"><a class="btn" href="https://www.cts-reisen.de/klassenfahrten/alle-angebote/deutschland/hamburg.html" target="_blank" rel="noopener">Angebot bei CTS ↗</a></p>
+<footer>Zusammenfassung der CTS-Angebotsseiten, Stand 9. November 2026. Alle Preise sind „ab“-Preise; für Juni 2028 gilt ein individuelles Angebot von CTS.</footer>
+</main></body></html>
